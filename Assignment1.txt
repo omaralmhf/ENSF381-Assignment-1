@@ -1,0 +1,515 @@
+ENSF-381: Assignment 1
+Winter 2026
+Department of Electrical and Software Engineering
+University of Calgary
+Due: February 20, 2026 at 11:59 PM
+Purpose:
+The purpose of this assignment is to build the front-end of an Ice Cream Shop Ordering system.
+The focus will be on designing and organizing HTML components to simulate an Ice Cream
+Shop Ordering system.
+Administrative Details:
+•
+
+The submission should be a single compressed file (.zip) containing the complete source
+code and resources (e.g., images), ready for execution without modifications.
+
+•
+
+Name the submitted zip file as: Assignment1_ENSF381_Section#_Group#. For
+example: Assignment1_ENSF381_L01_Group01.
+
+•
+
+The assignment must be completed in groups of two students.
+
+•
+
+Include the group members’ names and UCIDs at the top of the main HTML file
+(index.html) as source code comments.
+
+•
+
+Students are expected to use only the HTML tags and properties introduced during
+lectures and mentioned in this assignment ONLY.
+
+Specifications:
+The goal is to create a visually appealing and user-friendly Ice Cream Shop Ordering System
+with the following pages: Homepage, Login Page, Menu View, Customize Order, and Order
+Summary. Focus solely on the HTML structure and CSS styling to create pages that are
+professional, visually appealing, and user-friendly.
+NOTE: All styles must be within the styles.css file.
+File Organization:
+Organize your files as follows in a dedicated project directory:
+•
+
+index.html: The homepage of the Ice Cream Shop application.
+
+•
+
+login.html: The login page.
+
+•
+
+menu_view.html: The menu view page for customers.
+
+•
+
+customize_order.html: The page where customers customize ice cream orders.
+
+•
+
+order_summary.html: The page displaying the summary of a completed ice cream order.
+
+•
+
+styles.css: CSS file for styling.
+
+1. Homepage (index.html)
+Create the homepage layout with HTML, including:
+
+HTML Structure Requirements (index.html) (10 Marks):
+•
+
+Header (<header>):
+o Include the ice cream shop logo.
+o Place the shop name immediately to the right the logo.
+
+•
+
+Navigation (<div> directly below the header):
+The navbar should include links to the following pages:
+o Home (index.html)
+o Login (login.html)
+o Menu (menu_view.html)
+o Customize Order (customize_order.html)
+o Order Summary (order_summary.html)
+
+•
+
+Main Content (<main>):
+This segment of the page should include:
+o An “About Us" Section (<section>): A short description of the shop, with text
+that highlights key features such as browsing flavors, customizing orders, and
+viewing popular items.
+o
+
+•
+
+A “Featured Flavors” Section (<section>): A list of at least three ice cream
+flavors.
+
+Footer (<footer>):
+o Include a copyright notice.
+
+CSS Requirements (10 Marks):
+•
+
+Header (<header>):
+o Set background color to #f9e2c8 (soft beige).
+o Use Flexbox to align the Ice Cream logo and shop name horizontally (left) and
+vertically (center) within the header.
+o The spacing between the logo and shop name should be managed using a Flexbox
+gap of 10px.
+o Add padding of 15px 30px for spacing.
+o Add a bottom border using #e4b48c (darker beige) color to visually separate the
+header from the navigation bar.
+
+•
+
+Navigation Bar (<div>):
+o Set background color #fff3e0 (light cream).
+o Center-align all navigation links horizontally.
+o Apply a padding of 10px for spacing.
+o Add a bottom border to distinguish the navigation from the main content.
+o Style navigation links with:
+
+•
+
+§
+
+No underline by default.
+
+§
+
+Brown text color.
+
+§
+
+Background color: #f28c8c (soft pink).
+
+§
+
+Bold font weight.
+
+§
+
+Use margins left and right 10px for horizontal spacing.
+
+§
+
+Border radius set to 12px.
+
+Main Content (<main>)
+o About Us / Featured Flavors Sections:
+§ Set background color to #fff8ee (light cream).
+§
+
+Apply rounded corners (border radius 25px).
+
+§
+
+Center-align section headings.
+
+§
+
+Apply padding of 25px for spacing.
+
+§
+
+Add bottom margins 40px to separate sections.
+
+•
+
+§
+
+Apply subtle shadow effects to create visual depth.
+
+§
+
+Center the main container using flexbox
+
+§
+
+Set maximum width for main container: 1100px
+
+Footer (<footer>)
+o Set background color to #f9e2c8 (soft beige) for consistency with the header.
+o Center-align the footer text.
+o Apply padding of 15px.
+o Add a top border using #e4b48c to visually separate the footer from the main
+content.
+
+2. Login Page (login.html)
+HTML Structure Requirements – Login Page (login.html) (10 Marks)
+Create a login page for Sweet Scoop Ice Cream with the following elements and structure:
+•
+
+Header (<header>):
+o Contains the ice cream shop logo and shop name.
+
+•
+
+Navigation (<div> directly below the header):
+o Includes a link to the Home page only (index.html).
+
+•
+
+Main Content (<main>):
+o A login form with:
+
+•
+
+§
+
+A short welcome message above the form.
+
+§
+
+Username field (text input).
+
+§
+
+Password field (password input).
+
+§
+
+Login button that navigates to menu_view.html when clicked.
+
+§
+
+"Forgot Password" checkbox (non-functional).
+
+§
+
+<br> for spacing between elements.
+
+Footer (<footer>):
+o Displays a copyright notice.
+
+CSS Requirements (10 Marks):
+•
+
+Header, Navigation, Footer
+o Same styling as Homepage.
+
+•
+
+Login Form (<main> and <form>)
+o Center-align the login form using flexbox.
+o Apply maximum width of the main content to 1100px.
+o Add padding: 20px inside the main container.
+o Form Styling:
+
+•
+
+§
+
+Center-align all form elements using text alignment.
+
+§
+
+Add bottom margin of 70px to create spacing between the form and the
+footer.
+
+Input Fields
+o Style username and password fields with:
+§
+
+•
+
+Set background color to #fff8ee (light cream).
+
+Login Button
+o Set background color #f28c8c (Soft pink), White text, Bold font weight.
+o Apply border radius 12px.
+
+o Set padding to 8px on the top and bottom, and 14px on the left and right.
+o The cursor should change to pointer when hovering over the button.
+
+3. Menu View (menu_view.html)
+HTML Structure Requirements - Menu View (menu_view.html) (15 Marks)
+Display the current season or promotion, selectable from a drop-down menu (last 4 seasons).
+•
+
+Header (<header>):
+o Contains the ice cream shop logo and shop name.
+
+•
+
+Navigation (<div> directly below the header):
+o Includes navigation links (Homepage).
+
+•
+
+Main Content (<main>):
+o Includes a drop-down menu to display the current season or promotion (last four
+seasons).
+o Displays ice cream items in a tiled layout (three tiles per row).
+o Includes an Available Flavors section with tiles that contain:
+§
+
+Ice cream name and category.
+
+§
+
+Image.
+
+§
+
+Description.
+
+§
+
+Price range.
+
+§
+
+Dietary information.
+
+§
+
+A hyperlink to customize the order (customize_order.html).
+
+o Includes a Seasonal Specials section with tiles that contain:
+§
+§
+§
+
+•
+
+Ice cream name and image.
+Price.
+Two non-functional buttons:
+• “Add” button (soft pink).
+• “Remove” button (darker red).
+
+Footer (<footer>):
+o Displays a copyright notice.
+
+CSS Styling Requirements (15 Marks):
+•
+
+Header, Navigation, Footer
+o Same styling as Homepage.
+
+•
+
+•
+
+Season / Promotion Dropdown (<select>)
+o Styles for the dropdown menu:
+§
+
+Set background color to #fff8ee (light cream).
+
+§
+
+Set border radius to 10px.
+
+§
+
+Add padding 6px 10px.
+
+§
+
+Add border #e4b48c.
+
+§
+
+Center the dropdown horizontally using flexbox or text alignment.
+
+Ice Cream Tiles. Each tile should:
+o Set background color of #ffffff.
+o Apply border 20px, padding 15px, margin 15px.
+o Use box-shadow effect for better visibility.
+
+o Display tiles using inline-block to allow multiple tiles per row.
+o center-aligned text and content inside tiles.
+o Hyperlink to customize_order.html: soft pink background (#f28c8c), white text,
+bold font, border-radius 12px, padding 8px 14px.
+•
+
+Add / Remove Buttons (Seasonal Specials)
+o Add Button: soft pink background (#f28c8c), white text, bold font, border-radius
+12px, padding 8px 14px.
+o Remove Button: darker red background (#c94c4c), white text, bold font, borderradius 12px, padding 8px 14px.
+o Cursor should change to pointer on hover.
+
+4. Customize Order Page (customize_order.html)
+HTML Structure Requirements – Customize Order Page
+(customize_order.html) (10marks)
+Create a customized order page for Sweet Scoop Ice Cream with the following elements and
+structure:
+•
+
+Header (<header>):
+o Contains the ice cream shop logo and shop name.
+
+•
+
+Navigation (<div> directly below the header):
+o Includes navigation links (e.g., links to Home(index.html) and
+Menu(menu_view.html).
+
+•
+
+Main Content (<main>):
+o Displays two hardcoded ice cream orders on the same page using a form.
+o Includes a banner image at the top of the main content.
+o Vanilla Dream:
+§
+
+Allows the user to choose the ice cream type using radio buttons (Cup or
+Cone).
+§ Includes a non-functional “Submit Selection” button.
+o Chocolate Bliss:
+§ Allows the user to choose toppings using checkboxes.
+§ Includes a non-functional Submit Selection button.
+o Includes a Finish Order button that navigates to order_summary.html.
+•
+
+Footer (<footer>):
+o Displays a copyright notice.
+
+CSS Styling Requirements (5 marks):
+•
+
+Header, Navigation, Footer
+o Same styling as Homepage.
+
+•
+
+Main Container (<main>)
+o Center the main content using flexbox.
+
+o Set maximum width of main content 1100px.
+o Add padding inside main container 20px.
+o Center-aligned Content to be vertically stacked.
+•
+
+Banner Image
+o Set the banner image to be centered within the main container.
+o Ice Cream Options
+o Apply spacing between radio button and checkbox options using line breaks
+(<br>).
+
+5. Order Summary (order_summary.html)
+HTML Structure Requirements – Order Summary Page (order_summary.html)
+(10 Marks)
+Create an order summary page for Sweet Scoop Ice Cream that displays a completed ice cream
+order with the following elements and structure:
+•
+
+Header (<header>):
+o
+
+•
+
+Contains the ice cream shop logo and shop name.
+
+Navigation (<div> directly below the header):
+o Includes navigation links to the Homepage and Menu View.
+
+•
+
+Main Content (<main>):
+o Displays a hardcoded summary of a completed ice cream order.
+o Uses a <table> to present the order details.
+o Order Summary Table includes:
+§
+§
+§
+§
+§
+
+Four rows: Flavor, Type, Toppings, and Price.
+Displays the ice cream name.
+Shows the selected type (cup or cone).
+Lists the selected toppings.
+Shows a price.
+
+•
+
+Buttons:
+o Includes an “Edit Order” button that navigates back to customize_order.html.
+o Includes a “Confirm Order” button that is non-functional.
+
+•
+
+Footer (<footer>):
+o Displays a copyright notice.
+
+CSS Styling Requirements (5 Marks):
+•
+
+Header, Navigation, Footer
+o Same styling as Homepage.
+
+•
+
+Order Summary Table
+o Add a border to the table: 1px solid black.
+o Remove double borders using border-collapse.
+o Center the table horizontally.
+o Set the table background color to #fff8ee.
+o Add padding for top and bottom: 10px.
+o Add padding for left and right: 15px.
+o Set the text alignment to left.
+
+•
+
+“Edit Order” and “Confirm Order” Buttons:
+o soft pink background (#f28c8c), white text, bold font, border-radius 12px,
+padding 8px 14px.
+
+
