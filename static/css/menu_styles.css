@@ -1,152 +1,103 @@
-/* Header */
-header {
-    background-color: #f9e2c8;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    border-bottom: 1px solid #e4b48c;
-}
-
-header img {
-    margin-right: 10px;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #fff3e0;
+/* Reset the section widths that were restricted by styles.css */
+main > section:first-child,
+main > section:last-child {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 22px;
+    padding-bottom: 22px;
     text-align: center;
-    padding: 10px;
-    border-bottom: 1px solid #e4b48c;
-}
-
-nav a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 5px 12px;
-    background-color: #f28c8c;
-    color: brown;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 12px;
-}
-
-nav a:hover {
-    cursor: pointer;
-}
-
-/* Main Content */
-main {
-    display: block;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 25px;
-    background-color: #fff8ee;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.tiles-row {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 24px;
-}
-
-.flavor-tile, .special-tile {
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    padding: 18px 16px;
-    width: 260px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 0;
 }
 
-.flavor-tile img, .special-tile img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
+/* Season Dropdown Menu */
+.dropdown-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#season-select {
+    background-color: #fff8ee;
+    border-radius: 10px;
+    padding: 6px 10px;
+    border: 1px solid #e4b48c;
+    font-size: 16px;
+}
+
+/* Force exact rows of 3 items */
+.tiles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 15px;
+}
+
+/* Individual Ice Cream Tiles */
+.tile {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.tile img {
     border-radius: 12px;
     margin-bottom: 10px;
+    object-fit: cover;
+    width: 120px;
 }
 
+.tile h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.description, .price-range, .dietary, .price {
+    font-size: 0.9em;
+    margin: 8px 0;
+}
+
+/* Hyperlink to Customize Order */
 .customize-link {
     display: inline-block;
-    margin-top: 8px;
-    padding: 6px 16px;
-    background-color: #f28c8c;
-    color: white;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.customize-link:hover {
-    background-color: #e46c6c;
-}
-
-.add-button {
-    background-color: #f9c8d8;
-    color: #b22222;
-    border: none;
-    border-radius: 12px;
-    padding: 8px 18px;
-    margin: 6px 4px 0 0;
-    font-weight: bold;
-    cursor: pointer;
-}
-.remove-button {
-    background-color: #b22222;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    padding: 8px 18px;
-    margin: 6px 0 0 0;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-/* Footer */
-footer {
-    background-color: #f9e2c8;
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid #e4b48c;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    max-width: 1100px;
-    padding: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 70px;
-    gap: 3px;
-}
-
-form input {
-    background-color: #fff8ee;
-}
-
-form button {
     background-color: #f28c8c;
     color: white;
     font-weight: bold;
     border-radius: 12px;
     padding: 8px 14px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
-form button:hover {
+.customize-link:hover {
+    cursor: pointer;
+}
+
+/* Add / Remove Buttons for Specials */
+.btn-add {
+    background-color: #ffb6c1; /* Soft pink */
+    color: #4a1f1f;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: none;
+    margin: 5px;
+}
+
+.btn-remove {
+    background-color: #8b0000; /* Darker red */
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: none;
+    margin: 5px;
+}
+
+.btn-add:hover, .btn-remove:hover {
     cursor: pointer;
 }

@@ -1,91 +1,36 @@
-/* Header */
-header {
-    background-color: #f9e2c8;
+main {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    border-bottom: 1px solid #e4b48c;
-}
-
-header img {
-    margin-right: 10px;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #fff3e0;
-    text-align: center;
-    padding: 10px;
-    border-bottom: 1px solid #e4b48c;
-}
-
-nav a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 5px 12px;
-    background-color: #f28c8c;
-    color: brown;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 12px;
-}
-
-nav a:hover {
-    cursor: pointer;
-}
-
-/* Main Content */
-main {
-    display: flex;
-    justify-content: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 25px;
-    background-color: #fff8ee;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-/* Footer */
-footer {
-    background-color: #f9e2c8;
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid #e4b48c;
-}
-
-main {
-    display: flex;
-    justify-content: center;
     max-width: 1100px;
     padding: 20px;
 }
 
+section {
+    margin-bottom: 70px;
+}
+
 form {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
-    gap: 3px;
 }
 
-form input {
+form label {
+    align-items: center;
+}
+
+form input[type="text"],
+form input[type="password"] {
     background-color: #fff8ee;
 }
 
 form button {
     background-color: #f28c8c;
-    color: white;
+    color: #fff;
     font-weight: bold;
     border-radius: 12px;
     padding: 8px 14px;
-}
-
-form button:hover {
     cursor: pointer;
 }
