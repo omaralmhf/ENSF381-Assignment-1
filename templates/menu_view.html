@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Scoop Ice Cream</title>
-    <link rel="stylesheet" href="../static/css/login_styles.css">
+    <link rel="stylesheet" href="../static/css/menu_styles.css">
 </head>
 <body>
     <header>
@@ -14,8 +14,57 @@
     <nav>
         <a href="index.html">Home</a>
     </nav>
+<!--
+Main Content (<main>):
+o Includes a drop-down menu to display the current season or promotion (last four
+seasons).
+o Displays ice cream items in a tiled layout (three tiles per row).
+o Includes an Available Flavors section with tiles that contain:
+§ Ice cream name and category.
+§ Image.
+§ Description.
+§ Price range.
+§ Dietary information.
+§ A hyperlink to customize the order (customize_order.html).
+o Includes a Seasonal Specials section with tiles that contain:
+§ Ice cream name and image.
+§ Price.
+§ Two non-functional buttons:
+• “Add” button (soft pink).
+• “Remove” button (darker red).
+• Footer (<footer>):
+o Displays a copyright notice.    
+-->
     <main>
-        <p> Arrived to menu_view.html</p>
+        <section class="seasonal-promotion">
+            <h2>Seasonal Promotion</h2>
+            <select id="season-select">
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+                <option value="winter">Winter</option>
+            </select>
+        </section>
+
+        <section class="available-flavors">
+            <h2>Available Flavors</h2>
+            <div class="flavor-tile">
+                <img src="vanilla.jpg" alt="Vanilla Ice Cream">
+                <h3>Vanilla</h3>
+                <p>A classic flavor made with real vanilla beans.</p>
+                <p>Price: $3.00 - $5.00</p>
+                <p>Dietary Information: Gluten-Free, Nut-Free</p>
+                <a href="customize_order.html">Customize Order</a>
+            </div>
+        </section>
+
+        <section class="seasonal-specials">
+            <h2>Seasonal Specials</h2>
+            <div class="special-tile">
+                <img src="pumpkin.jpg" alt="Pumpkin Spice Ice Cream">
+                <h3>Pumpkin Spice</h3>
+                <p>Price: $4.00</p>
+                <button class="add-button
     </main>
     <footer>
         <p>&copy; 2026 Sweet Scoop Ice Cream</p>
