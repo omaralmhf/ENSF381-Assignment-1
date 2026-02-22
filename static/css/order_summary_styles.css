@@ -1,0 +1,47 @@
+main > section:first-child,
+main > section:last-child {
+    width: 80%;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* Order Summary Table */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff8ee;
+    text-align: left;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+table th {
+    background-color: #f9e2c8;
+    font-weight: bold;
+}
+
+/* Buttons */
+.summary-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-pink {
+    background-color: #f28c8c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
