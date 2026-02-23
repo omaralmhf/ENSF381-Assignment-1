@@ -5,7 +5,7 @@
 | Javier Dal Monte Casoni | 30254262 |
 | Omar Al-Mahfoodh | 30257072 |
 
-## Page Summaries:
+## Page Summaries
 
 - index.html: Landing, header, nav, main, footer (header, nav, main, footer styles)
 - login.html: Login form (login-page styles)
