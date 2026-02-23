@@ -31,7 +31,9 @@ body {
 }
 
 /* Navigation Bar */
-#nav {
+.nav {
+    display: flex;
+    flex-direction: row;
     background-color: #fff3e0;
     padding: 12px 0;
     display: flex;
@@ -41,7 +43,7 @@ body {
     border-bottom: 1px solid #e4b48c;
 }
 
-nav a {
+.nav a {
     display: inline-block;
     margin: 0;
     padding: 8px 18px;
@@ -54,11 +56,11 @@ nav a {
     position: relative;
 }
 
-nav a:hover {
+.nav a:hover {
     cursor: pointer;
 }
 
-nav a + a::before {
+.nav a + a::before {
     content: '';
     position: absolute;
     left: -14px;
@@ -177,4 +179,243 @@ body {
   min-height: 100vh;
 }
 
+/* ====================
+   Page Specific Styles
+   ============ */
 
+
+/* ==============
+ *   Login Page
+ * ============== */
+
+.login-page section {
+    margin-bottom: 70px;
+}
+
+.login-page form {
+    text-align: center;
+    align-items: center;
+}
+
+.login-page form label {
+    align-items: center;
+}
+
+.login-page form input[type="text"],
+.login-page form input[type="password"] {
+    background-color: #fff8ee;
+}
+
+.login-page form button {
+    background-color: #f28c8c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+
+/* ==============
+ * Menu View Page
+ * ============== */
+
+
+/* Season Dropdown Menu */
+.menu-page .dropdown-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-page #season-select {
+    background-color: #fff8ee;
+    border-radius: 10px;
+    padding: 6px 10px;
+    border: 1px solid #e4b48c;
+    font-size: 16px;
+}
+
+/* Force exact rows of 3 items */
+.menu-page .tiles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 15px;
+}
+
+/* Individual Ice Cream Tiles */
+.menu-page .tile {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.menu-page .tile img {
+    border-radius: 12px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    width: 120px;
+}
+
+.menu-page .tile h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.menu-page .description, .menu-page .price-range, .menu-page .dietary, .menu-page .price {
+    font-size: 0.9em;
+    margin: 8px 0;
+}
+
+/* Hyperlink to Customize Order */
+.menu-page .customize-link {
+    display: inline-block;
+    background-color: #f28c8c;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.menu-page .customize-link:hover {
+    cursor: pointer;
+}
+
+/* Add / Remove Buttons for Specials */
+.menu-page .btn-add {
+    background-color: #ffb6c1; /* Soft pink */
+    color: #4a1f1f;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: none;
+    margin: 5px;
+}
+
+.menu-page .btn-remove {
+    background-color: #8b0000; /* Darker red */
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: none;
+    margin: 5px;
+}
+
+.menu-page .btn-add:hover, .menu-page .btn-remove:hover {
+    cursor: pointer;
+}
+
+
+
+/* Customize Order Page */
+/* Banner image */
+.customize-page .banner-img {
+    width: 100%;
+    max-width: 700px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Form layout */
+.customize-page form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.customize-page form section {
+    width: 60%;
+    text-align: center;
+}
+
+.customize-page form section label {
+    display: block;
+    margin: 6px 0;
+}
+
+/* Submit Selection buttons */
+.customize-page form section button {
+    background-color: #f28c8c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+/* Finish Order button */
+.customize-page .finish-btn-wrapper {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.customize-page .finish-btn {
+    background-color: #f28c8c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* ==============
+ *   Order Page
+ * ============== */
+
+
+/* Order Summary Table */
+.order-page table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff8ee;
+    text-align: left;
+}
+
+.order-page table th,
+.order-page table td {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+.order-page table th {
+    background-color: #f9e2c8;
+    font-weight: bold;
+}
+
+/* Buttons */
+.order-page .summary-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.order-page .btn-pink {
+    background-color: #f28c8c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
