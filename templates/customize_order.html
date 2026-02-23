@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Order - Sweet Scoop Ice Cream</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/customize_styles.css">
+</head>
+<body>
+    <header>
+        <img src="../static/img/logo.jpeg" alt="Ice Cream Logo">
+        <h1>Sweet Scoop Ice Cream</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu_view.html">Menu</a>
+    </nav>
+    <main>
+        <img src="../static/img/Picture1.webp" alt="Ice Cream Banner" class="banner-img">
+
+        <form>
+            <section>
+                <h2>Vanilla Dream</h2>
+                <p>Choose your ice cream type:</p>
+                <label>
+                    <input type="radio" name="vanilla-type" value="cup"> Cup
+                </label><br>
+                <label>
+                    <input type="radio" name="vanilla-type" value="cone"> Cone
+                </label><br><br>
+                <button type="button">Submit Selection</button>
+            </section>
+
+            <!-- Order 2: Chocolate Bliss -->
+            <section>
+                <h2>Chocolate Bliss</h2>
+                <p>Choose your toppings:</p>
+                <label>
+                    <input type="checkbox" name="topping" value="sprinkles"> Sprinkles
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="hot-fudge"> Hot Fudge
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="whipped-cream"> Whipped Cream
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="cherries"> Cherries
+                </label><br><br>
+                <button type="button">Submit Selection</button>
+            </section>
+
+            <div class="finish-btn-wrapper">
+                <button type="button" class="finish-btn" onclick="window.location.href='order_summary.html'">Finish Order</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Sweet Scoop Ice Cream</p>
+    </footer>
+</body>
+</html>
